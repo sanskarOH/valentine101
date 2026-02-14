@@ -1,8 +1,8 @@
 import { AuroraText } from "@/components/ui/aurora-text";
-import { TypingAnimation } from "@/components/ui/typing-animation";
 import { GravityStarsBackground } from "@/components/animate-ui/components/backgrounds/gravity-stars";
 import { Pinlist } from "@/components/mine/Pinlist";
 import LoveLetter from "@/components/mine/LoveLetter";
+import { ComicText } from "@/components/ui/comic-text";
 
 export default function Her() {
   return (
@@ -13,14 +13,14 @@ export default function Her() {
           <h1 className="text-4xl font-bold tracking-tighter md:text-5xl lg:text-7xl leading-none">
             Hello, <AuroraText>Beautiful</AuroraText>
           </h1>
-          <p className="text-3xl mt-0">
-            <TypingAnimation>Kaveri Jain</TypingAnimation>
-          </p>
           <div className="Letter">
             <LoveLetter />
           </div>
-          <div className="pinlist">
-            <Pinlist />
+          <div className="cheers">
+            <h1 className="text-4xl font-extrabold tracking-tighter mt-9">
+              This Valentines
+            </h1>
+            <ComicText>Cheers to Us</ComicText>
           </div>
         </div>
       </div>

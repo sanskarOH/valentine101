@@ -3,7 +3,7 @@ import { Highlighter } from "../ui/highlighter";
 export default function LoveLetter() {
   return (
     <div className="flex justify-center items-center py-7">
-      <div className="max-w-2xl bg-white/10 backdrop-blur-md p-10 rounded-2xl shadow-2xl border border-white/20">
+      <div className="max-w-2xl bg-white/80 backdrop-blur-lg p-10 rounded-3xl shadow-xl border border-pink-200">
         <h2 className="text-3xl font-semibold mb-6 text-pink-400">
           A Letter To You 💖
         </h2>
@@ -16,12 +16,21 @@ export default function LoveLetter() {
           ,
           <br />
           From the moment you walked into my life, everything started feeling
-          lighter, brighter, and somehow more meaningful.
+          <Highlighter action="underline">lighter, brighter</Highlighter>, and
+          somehow more meaningful . I became more full of life.
           <br />
           <br />
-          You are my calm in chaos, my happiness on difficult days, and my
-          favorite person to exist with.
-          <br />,
+          You are my calm in chaos, my <Highlighter>happiness</Highlighter> on
+          difficult days, and my favorite person to exist with. I know I
+          sometimes get angry but I want to and I am trying to build a life with
+          you in it.
+          <br />
+          <br />
+          But deep down in my{" "}
+          <Highlighter>heart, I love you a lot.</Highlighter>
+          <br />
+          <br />
+          Meow.
         </p>
       </div>
     </div>
