@@ -1,5 +1,5 @@
 import Hero from "./section/Hero";
-import ValentineCard from "./components/ValentineCard";
+import ValentineCard from "./components/mine/ValentineCard";
 import Her from "./pages/Her";
 import { Routes, Route } from "react-router-dom";
 

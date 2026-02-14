@@ -1,9 +1,8 @@
 import { AuroraText } from "@/components/ui/aurora-text";
 import { TypingAnimation } from "@/components/ui/typing-animation";
 import { GravityStarsBackground } from "@/components/animate-ui/components/backgrounds/gravity-stars";
-import { PinList } from "@/components/animate-ui/components/community/pin-list";
-import { Pin } from "lucide-react";
-import { Pinlist } from "@/components/ui/Pinlist";
+import { Pinlist } from "@/components/mine/Pinlist";
+import LoveLetter from "@/components/mine/LoveLetter";
 
 export default function Her() {
   return (
@@ -17,6 +16,9 @@ export default function Her() {
           <p className="text-3xl mt-0">
             <TypingAnimation>Kaveri Jain</TypingAnimation>
           </p>
+          <div className="Letter">
+            <LoveLetter />
+          </div>
           <div className="pinlist">
             <Pinlist />
           </div>

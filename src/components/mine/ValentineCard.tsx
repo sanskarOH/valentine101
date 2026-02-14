@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import confetti from "canvas-confetti";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 import { useNavigate } from "react-router-dom";
 export default function ValentineCard() {
   const [accepted, setAccepted] = useState(false);
