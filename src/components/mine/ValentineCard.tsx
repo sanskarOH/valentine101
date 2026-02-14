@@ -3,7 +3,12 @@ import { useState } from "react";
 import confetti from "canvas-confetti";
 import { Button } from "../ui/button";
 import { useNavigate } from "react-router-dom";
-export default function ValentineCard() {
+
+type Props = {
+  playMusic: () => void;
+};
+export default function ValentineCard({ playMusic }: Props) {
+  playMusic();
   const [accepted, setAccepted] = useState(false);
   const [noPosition, setNoPosition] = useState({ top: 0, left: 0 });
 
