@@ -72,6 +72,7 @@ export default function ValentineCard() {
 
               <button
                 onMouseEnter={moveNoButton}
+                onTouchStart={moveNoButton}
                 style={
                   noPosition.top !== 0 || noPosition.left !== 0
                     ? {
