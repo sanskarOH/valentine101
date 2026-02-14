@@ -1,6 +1,5 @@
 import { AuroraText } from "@/components/ui/aurora-text";
 import { GravityStarsBackground } from "@/components/animate-ui/components/backgrounds/gravity-stars";
-import { Pinlist } from "@/components/mine/Pinlist";
 import LoveLetter from "@/components/mine/LoveLetter";
 import { ComicText } from "@/components/ui/comic-text";
 

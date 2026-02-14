@@ -17,17 +17,21 @@ export default function LoveLetter() {
           <br />
           From the moment you walked into my life, everything started feeling
           <Highlighter action="underline">lighter, brighter</Highlighter>, and
-          somehow more meaningful . I became more full of life.
+          somehow more meaningful . I became more{" "}
+          <Highlighter action="underline">full of life</Highlighter>.
           <br />
           <br />
           You are my calm in chaos, my <Highlighter>happiness</Highlighter> on
-          difficult days, and my favorite person to exist with. I know I
-          sometimes get angry but I want to and I am trying to build a life with
-          you in it.
+          difficult days, and{" "}
+          <Highlighter action="underline" color="#FF0000">
+            my favorite person
+          </Highlighter>{" "}
+          to exist with. I know I sometimes get angry but I want to and I am
+          trying to build a life with you in it.
           <br />
           <br />
-          But deep down in my{" "}
-          <Highlighter>heart, I love you a lot.</Highlighter>
+          But deep down in my heart,{" "}
+          <Highlighter>I love you a lot.</Highlighter>
           <br />
           <br />
           Meow.
