@@ -5,6 +5,9 @@ export default function Hero() {
   return (
     <>
       <MorphingText className="text-white" texts={text} />
+      <div className="main-card">
+        
+      </div>
     </>
   );
 }

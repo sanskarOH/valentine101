@@ -1,6 +1,8 @@
 "use client";
 import { useState } from "react";
-
+import confetti from "canvas-confetti";
+import { Button } from "./ui/button";
+import { useNavigate } from "react-router-dom";
 export default function ValentineCard() {
   const [accepted, setAccepted] = useState(false);
   const [noPosition, setNoPosition] = useState({ top: 0, left: 0 });
@@ -9,6 +11,46 @@ export default function ValentineCard() {
     const randomTop = Math.floor(Math.random() * 200);
     const randomLeft = Math.floor(Math.random() * 200);
     setNoPosition({ top: randomTop, left: randomLeft });
+  };
+
+  const navigate = useNavigate();
+
+  const handleYes = () => {
+    navigate("/her");
+  };
+
+  const handleClick = () => {
+    const end = Date.now() + 3 * 1000; // 3 seconds
+    const colors = ["#ff0000", "#ff1a1a", "#cc0000", "#ff4d4d"];
+
+    const frame = () => {
+      if (Date.now() > end) return;
+
+      confetti({
+        particleCount: 10,
+        angle: 60,
+        spread: 55,
+        startVelocity: 60,
+        origin: { x: 0, y: 0.5 },
+        colors: colors,
+      });
+      confetti({
+        particleCount: 10,
+        angle: 120,
+        spread: 55,
+        startVelocity: 60,
+        origin: { x: 1, y: 0.5 },
+        colors: colors,
+      });
+
+      requestAnimationFrame(frame);
+    };
+
+    frame();
+
+    setTimeout(() => {
+      handleYes();
+    }, 3000);
   };
 
   return (
@@ -68,6 +110,9 @@ export default function ValentineCard() {
               async
               src="https://tenor.com/embed.js"
             ></script>
+            <Button variant="outline" onClick={handleClick}>
+              Click Me
+            </Button>
           </>
         )}
       </div>

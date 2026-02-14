@@ -1,0 +1,27 @@
+import { AuroraText } from "@/components/ui/aurora-text";
+import { TypingAnimation } from "@/components/ui/typing-animation";
+import { GravityStarsBackground } from "@/components/animate-ui/components/backgrounds/gravity-stars";
+import { PinList } from "@/components/animate-ui/components/community/pin-list";
+import { Pin } from "lucide-react";
+import { Pinlist } from "@/components/ui/Pinlist";
+
+export default function Her() {
+  return (
+    <>
+      <GravityStarsBackground className="absolute -z-10" />
+      <div className="main-container flex  flex-col items-center">
+        <div className=" header min-h-screen flex flex-col p-6  ">
+          <h1 className="text-4xl font-bold tracking-tighter md:text-5xl lg:text-7xl leading-none">
+            Hello, <AuroraText>Beautiful</AuroraText>
+          </h1>
+          <p className="text-3xl mt-0">
+            <TypingAnimation>Kaveri Jain</TypingAnimation>
+          </p>
+          <div className="pinlist">
+            <Pinlist />
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
